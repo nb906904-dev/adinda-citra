@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adinda Citra — An Elegant Little World</title>
+  <style>
+    :root{
+      --cream:#fbf7f2;
+      --rose:#c98f9b;
+      --deep:#40343a;
+      --muted:#827278;
+      --line:#eadde0;
+      --white:#fffdfb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family: Georgia, "Times New Roman", serif;
+      background:var(--cream);
+      color:var(--deep);
+      line-height:1.6;
+    }
+    nav{
+      position:fixed;top:0;left:0;width:100%;z-index:10;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 7%;
+      background:rgba(251,247,242,.82);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(234,221,224,.65);
+    }
+    .logo{font-size:1.35rem;letter-spacing:2px}
+    nav a{color:var(--deep);text-decoration:none;margin-left:25px;font-size:.9rem}
+    nav a:hover{color:var(--rose)}
+    .hero{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:120px 8% 70px;
+      position:relative;overflow:hidden;
+    }
+    .hero:before,.hero:after{
+      content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.45;
+    }
+    .hero:before{width:320px;height:320px;background:#efd9dc;top:12%;left:-100px}
+    .hero:after{width:380px;height:380px;background:#e9dfd0;bottom:-140px;right:-100px}
+    .hero-content{max-width:800px;position:relative;z-index:1}
+    .eyebrow{
+      text-transform:uppercase;letter-spacing:5px;font-size:.72rem;
+      color:var(--rose);margin-bottom:20px;
+    }
+    h1{font-size:clamp(4rem,12vw,8.5rem);font-weight:400;line-height:.9;letter-spacing:-4px}
+    .tagline{font-size:1.15rem;color:var(--muted);margin:30px auto;max-width:530px}
+    .button{
+      display:inline-block;padding:13px 28px;border:1px solid var(--rose);
+      color:var(--deep);text-decoration:none;border-radius:30px;font-size:.9rem;
+      transition:.25s;
+    }
+    .button:hover{background:var(--rose);color:white}
+    section{padding:95px 8%;max-width:1100px;margin:auto}
+    .section-title{text-align:center;font-size:2.3rem;font-weight:400;margin-bottom:14px}
+    .section-sub{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 45px}
+    .about{
+      display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;
+    }
+    .portrait{
+      min-height:390px;border-radius:180px 180px 20px 20px;
+      background:linear-gradient(145deg,#ead5d8,#f1e9dc);
+      display:flex;align-items:center;justify-content:center;
+      font-size:4rem;color:#9c777e;
+    }
+    .about-text p{color:var(--muted);margin-bottom:18px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{
+      background:var(--white);padding:30px 25px;border:1px solid var(--line);
+      border-radius:18px;min-height:190px;
+    }
+    .card span{font-size:1.5rem;color:var(--rose)}
+    .card h3{font-weight:400;margin:15px 0 8px;font-size:1.25rem}
+    .card p{color:var(--muted);font-size:.93rem}
+    .quote{
+      text-align:center;padding:100px 10%;background:#f2e6e4;
+      max-width:none;font-size:clamp(1.5rem,3vw,2.3rem);font-style:italic;
+    }
+    footer{
+      text-align:center;padding:45px 20px;border-top:1px solid var(--line);
+      color:var(--muted);font-size:.85rem;
+    }
+    .tiny{margin-top:8px;font-size:.75rem}
+    @media(max-width:700px){
+      nav{padding:16px 5%}.logo{font-size:1.1rem}nav a{margin-left:12px;font-size:.78rem}
+      .about,.cards{grid-template-columns:1fr}
+      section{padding:75px 7%}
+      .portrait{min-height:300px}
+      h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">ADINDA CITRA</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#world">World</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Welcome to her world</div>
+      <h1>Adinda<br>Citra</h1>
+      <p class="tagline">A quiet collection of beautiful thoughts, little moments, and stories waiting to be discovered.</p>
+      <a class="button" href="#about">Discover More</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="about">
+      <div class="portrait">A C</div>
+      <div class="about-text">
+        <div class="eyebrow">A little introduction</div>
+        <h2 class="section-title" style="text-align:left">The girl behind the name</h2>
+        <p>Adinda Citra is a name wrapped in softness, curiosity, and quiet confidence. This space is a small window into her world.</p>
+        <p>From dreamy ideas to meaningful moments, every detail has a place here. Stay a while, look around, and make yourself at home.</p>
+        <a class="button" href="#world">Enter Her World</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="world">
+    <div class="eyebrow" style="text-align:center">A few things to explore</div>
+    <h2 class="section-title">Her Little World</h2>
+    <p class="section-sub">A gentle space for creativity, memories, and the things that make ordinary days feel special.</p>
+    <div class="cards">
+      <div class="card">
+        <span>✦</span>
+        <h3>Stories</h3>
+        <p>Thoughts, dreams, and little stories collected one page at a time.</p>
+      </div>
+      <div class="card">
+        <span>♡</span>
+        <h3>Moments</h3>
+        <p>Beautiful fragments of life worth remembering and keeping close.</p>
+      </div>
+      <div class="card">
+        <span>❀</span>
+        <h3>Inspiration</h3>
+        <p>Books, art, ideas, and everything that sparks a little imagination.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote">
+    “Some worlds are not meant to be rushed through — they are meant to be felt.”
+  </div>
+
+  <section id="contact">
+    <div class="eyebrow" style="text-align:center">Stay connected</div>
+    <h2 class="section-title">Let's Keep in Touch</h2>
+    <p class="section-sub">Have a thought, a story, or simply a hello? This little corner is always open.</p>
+    <div style="text-align:center">
+      <a class="button" href="mailto:hello@adindacitra.example">Say Hello</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Adinda Citra</div>
+    <div class="tiny">Made with softness &amp; a little imagination.</div>
+  </footer>
+</body>
+</html>
